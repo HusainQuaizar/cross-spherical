@@ -97,11 +97,17 @@ ABENICS is an open-source, 3D-printed active ball-joint actuator offering three 
 
 /
 ├── docs/ # Wiring diagrams, assembly instructions
+
 ├── firmware/ # Teensyduino C++ code
+
 │ ├── src/
+
 │ └── lib/
+
 ├── hardware/ # STEP/STL files, CAD models
+
 ├── config/ # Motor calibration & gear ratios
+
 └── LICENSE
 
 
@@ -132,7 +138,7 @@ ABENICS is an open-source, 3D-printed active ball-joint actuator offering three 
 
 6. **Calibrate**
 
-    Run config/calibrate.py (Python 3) to tune steps/mm and offsets.
+    Run config/calibrate.py (Python 3) to tune steps/mm and offsets. 
    
 
 <p align="center">
