@@ -95,6 +95,46 @@ ABENICS is an open-source, 3D-printed active ball-joint actuator offering three 
 
 ### Repository Structure
 
+/
+├── docs/ # Wiring diagrams, assembly instructions
+├── firmware/ # Teensyduino C++ code
+│ ├── src/
+│ └── lib/
+├── hardware/ # STEP/STL files, CAD models
+├── config/ # Motor calibration & gear ratios
+└── LICENSE
+
+
+---
+
+## 🚀 Getting Started
+
+1. **Clone this repository**  
+   ```bash
+   git clone https://github.com/yourusername/abenics-actuator.git
+   cd abenics-actuator
+   
+2. **3D-print the parts**
+
+    Slice with 0.2 mm layers, 20% infill recommended.
+
+3. **Assemble mechanics**
+
+    Press-fit bearings, mount gears to motor shafts.
+
+4. **Wire electronics**
+
+    Follow docs/wiring.pdf for stepper drivers & Teensy pinout.
+
+5. **Build & upload firmware**
+
+    Open firmware/src/Actuator.ino in Arduino IDE (Teensyduino).
+
+6. **Calibrate**
+
+    Run config/calibrate.py (Python 3) to tune steps/mm and offsets.
+   
+
 <p align="center">
   <img src="images/DIY-abenics.png" alt="ABENICS, The original implementation" width="600" height="325"><br>
 </p>
